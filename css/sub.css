@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+header h2{ margin: 9px 0; font-weight: 700; font-size: 1.75rem; color: #24125f; }
+#movieTabBox{ width: 100%; padding: 15px; box-sizing: border-box; }
+#movieTabBox ul{ display: flex; justify-content: flex-start; }
+#movieTabBox li{ padding: 10px; box-sizing: border-box; border-bottom: 1px solid #999; }
+#movieTabBox li:first-child{ padding-left: 0; }
+#movieTabBox li.active{ border-bottom: 2px solid #24125f; color: #24125f; }
+#movieTabBox li.active a{ color: #24125f; }
+#movieTabBox a{ font-size: 1.125rem; color: #999; }
+
+
+
+
+
