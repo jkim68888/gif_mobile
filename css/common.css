@@ -58,16 +58,16 @@ address{ display: flex; justify-content: center; text-align: center; margin-top:
 .panel .topNav li:last-child{ background-image: url(../images/common/panel_ticket_icon.png); background-repeat: no-repeat; background-size: 20px 12px; background-position: -2% 43%; }
 .panel .topNav a{ font-size: 0.75rem; color: #fff; }
 .panel .gnb01{ height: auto; padding: 40px 15px 60px; border-bottom: 1px solid #999; box-sizing: border-box; }
-.panel .gnb01 ul{ display: flex; }
-.panel .gnb01 li{ position: relative; flex: 1; height: 60px; margin-left: 30px; border-radius: 60px; border: 1px solid #999; }
-.panel .gnb01 .first{ margin-bottom: 40px; box-sizing: border-box; }
+.panel .gnb01 ul{ display: flex; justify-content: space-between; }
+.panel .gnb01 li{ position: relative; width: 4.5rem; height: 4.5rem; border-radius: 4.5rem; border: 1px solid #999; }
+.panel .gnb01 .first{ margin-bottom: 2.5rem; box-sizing: border-box; }
 .panel .gnb01 li:first-child{ margin: 0; }
 .panel .gnb01 a{ display: block; color: #333; }
-.panel .gnb01 img{ position: absolute; top: 22.5%; left: 22.5%; width: 35px; }
-.panel .ticket img{ width: 40px; top: 30%; left: 19%; }
-.panel .mypage img{ width: 24px; top: 24%; left: 30%; }
-.panel .map img{ width: 28px; left: 27%; }
-.panel .gnb01 p{ position: absolute; top: 64px; left: 0; width: 60px; margin: 0 auto; text-align: center; font-size: 0.815rem; }
+.panel .gnb01 img{ position: absolute; top: 1.2rem; left: 1.2rem; width: 2rem; }
+.panel .ticket img{ width: 3rem; left: 0.8rem; }
+.panel .mypage img{ width: 1.5rem; left: 1.5rem; }
+.panel .map img{ width: 2rem; }
+.panel .gnb01 p{ position: absolute; top: 5rem; width: 4.2rem; margin: 0 auto; text-align: center; font-size: 0.815rem; }
 .panel .gnb02{ height: 40px; }
 .panel .gnb02 a{ display: block; height: 100%; padding: 0 15px; box-sizing: border-box; line-height: 40px; font-size: 1rem; color: #333; }
 .panel .gnb02 > ul > li{ width: 100%; border-bottom: 1px solid #999; }
@@ -79,21 +79,6 @@ address{ display: flex; justify-content: center; text-align: center; margin-top:
 .panel .sns ul{ position: absolute; bottom: 30px; right: 15px; }
 .panel .sns li{ float: left; }
 .panel .sns img{ height: 38px; padding-left: 8px; }
-@media screen and (min-width: 414px){
-    .panel .gnb01 li{ position: relative; flex: 1; height: 70px; margin-left: 30px; border-radius: 70px; border: 1px solid #999; }
-    .panel .gnb01 p{ position: absolute; top: 75px; left: 0; width: 70px; margin: 0 auto; text-align: center; font-size: 0.75rem; }
-    .panel .gnb01 img{ position: absolute; top: 22%; left: 22%; width: 38px; }
-    .panel .ticket img{ width: 45px; top: 30%; left: 19%; }
-    .panel .mypage img{ width: 28px; top: 24%; left: 30%; }
-    .panel .map img{ width: 32px; top: 26%; left: 27%; }
-}
-@media screen and (max-width: 320px){
-    .panel .gnb01 li{ position: relative; flex: 1; height: 50px; margin-left: 30px; border-radius: 50px; border: 1px solid #999; }
-    .panel .gnb01 img{ position: absolute; top: 17%; left: 17%; width: 35px; }
-    .panel .ticket img{ width: 40px; top: 25%; left: 12%; }
-    .panel .mypage img{ width: 24px; top: 22%; left: 28%; }
-    .panel .map img{ width: 28px; left: 23%; }
-}
 
 
 
