@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*introduce*/
+#introBox{ height: 1000px; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: lightblue; }
+/*color: #24125f;*/
+table{ border-spacing: inherit; border-collapse: separate; }
+
+
+/*identity*/
+#identityBox{ height: 450px; margin: 2rem 15px 6rem; box-sizing: border-box; }
+.logoImg{ width: 8rem; margin: 0 auto; margin-bottom: 2rem; border: 2px solid #24125f; border-radius: 15px; }
+#identityBox h3{ margin-bottom: 0.5rem; text-align: center; font-size: 1.25rem; color: #24125f; }
+.fontName{ width: 15rem; margin: 0 auto 1.5rem; }
+#identityBox p{ margin-bottom: 2rem; text-align: center; font-size: 1.125rem; color: #333; }
+
+/*familyBox*/
+#familyBox{ height: 850px; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: lightblue; }
+
+
+
+
+
