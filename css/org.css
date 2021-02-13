@@ -1,11 +1,22 @@
 @charset "UTF-8";
 
 /*introduce*/
-#introBox{ height: 60rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
+#introBox{ height: 61rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
 #introBox h3{ padding-left: 1.7rem; margin-bottom: 0.8rem; box-sizing: border-box; font-size: 1.25rem; font-weight: 400; background-image: url(../images/org/edit_img.png); background-position: left; background-size: 20px; background-repeat: no-repeat; }
 #introBox p{ margin-bottom: 1.5rem; box-sizing: border-box; font-size: 0.875rem; }
 #introBox .first{ margin-bottom: 0.8rem; }
-table{ border-spacing: inherit; border-collapse: separate; border: 2px solid #24125f; }
+#introBox table{ padding: 2rem 1rem; box-sizing: border-box; border-spacing: inherit; border-collapse: separate; border: 2px solid #24125f; }
+#introBox th{ padding: 0.5rem; box-sizing: border-box; font-size: 0.75rem; background-color: #ebebeb; border-bottom: 1px solid #fff; }
+#introBox td{ padding: 0.5rem; box-sizing: border-box; font-size: 0.675rem; background-color: #ccc; border-bottom: 1px solid #fff; }
+
+/*familyBox*/
+#familyBox{ height: 65rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
+#familyBox a{ display: block; margin-bottom: 2rem; padding: 0.8rem; box-sizing: border-box; border-radius: 10px; }
+#familyBox .gray{ background-color: #f9f9f9; }
+#familyBox .blue{ background-color: rgba(36,18,95,0.1); }
+#familyBox img{ float: left; width: 50px; margin-right: 0.5rem; box-sizing: border-box; border: 1px solid #24125f; }
+#familyBox h3{ border-bottom: 1px solid #333; font-size: 0.95rem; color: #333; }
+#familyBox p{ font-size: 0.75rem; color: #333; }
 
 
 /*identity*/
@@ -14,11 +25,4 @@ table{ border-spacing: inherit; border-collapse: separate; border: 2px solid #24
 #identityBox h3{ margin-bottom: 0.5rem; text-align: center; font-size: 1.25rem; color: #24125f; }
 .fontName{ width: 15rem; margin: 0 auto 1.5rem; }
 #identityBox p{ margin-bottom: 2rem; text-align: center; font-size: 1.125rem; color: #333; }
-
-/*familyBox*/
-#familyBox{ height: 850px; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: lightblue; }
-
-
-
-
 

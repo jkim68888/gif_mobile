@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* ticketing */
+#ticketingBox{ height: 62rem; margin: 2rem 15px 6rem; box-sizing: border-box; } 
+#ticketingBox .star{ position: relative; top: 6px; left: -3px; color: #24125f; font-size: 1rem; font-weight: 700; }
+#ticketingBox .descript{ padding-left: 15px; margin-bottom: 20px; box-sizing: border-box; }
+#ticketingBox .descript p{ font-size: 0.75rem; }
+#ticketBox{ position: relative; width: 100%; height: 57rem; padding: 1rem 0.5rem; box-sizing: border-box; border-radius: 15px; border: 3px solid #24125f; }
+#ticketBox h3{ padding: 0 20px 20px; box-sizing: border-box; font-weight: 700; color: #333; }
+.dateBox{ position: relative; width: 100%; height: 2.5rem; padding: 0 1rem; box-sizing: border-box; margin: 0 auto; background-color: #ededed; border-radius: 3rem; }
+.dateBox ul{ display: flex; justify-content: space-between; }
+.dateBox li{ width: 1.8rem; line-height: 2.5rem; text-align: right; }
+.dateBox a{ text-align: center; font-size: 0.75rem; color: #333; }
+.btn{ width: 2rem; height: 2rem; background-color: #24125f; border-radius: 2rem; box-shadow: 2px 2px 2px #999; }
+.prevBtn{ display: none; position: absolute; top: 4rem; left: -0.5rem; }
+.nextBtn{ position: absolute; top: 4rem; right: -0.5rem; }
+.btn a{ display: block; width: 2.5rem; height: 2.5rem; background-repeat: no-repeat; background-size: 0.6rem; }
+.prevBtn a{ background-image: url(../images/ticket/prev_btn_out.png); background-position: 0.6rem 0.45rem; }
+.nextBtn a{ background-image: url(../images/ticket/next_btn_out.png); background-position: 0.8rem 0.45rem; }
+.today{ position: absolute; top: -1.2rem; left: 0.5rem; width: 3rem; height: 1.7rem; border-radius: 2rem; background-color: #e05975; line-height: 1.7rem; font-size: 0.875rem; text-align: center; color: #fff; z-index: 1; animation: move 2s ease-in-out 1s infinite; }
+@keyframes move{
+    50%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.dateBox a.active{ border-bottom: 2px solid #24125f; font-weight: 700; color: #24125f; }
+.dateBox a:hover{ font-weight: 700; }
+.movieBox{ position: relative; float: left; width: 100%; height: 20rem; margin-top: 2rem; box-sizing: border-box; border: 1px solid #999; }
+.movieBox h3, .timeBox h3{ width: 100%; height: 2rem; line-height: 2rem; padding: 1rem; box-sizing: border-box; background-color: #ededed; font-weight: 700; font-size: 1.25rem; color: #333; }
+.movieBox .text{ position: absolute; top: calc(50%); right: calc(50% - 5.5rem); font-size: 0.75rem; font-weight: 400; color: #666; }
+.movieBox li{ height: 2rem; }
+.movieBox a{ display: flex; justify-content: space-between; height: 100%; line-height: 2rem; margin-bottom: 1rem; box-sizing: border-box; border-bottom: 1px solid #333; }
+.movieBox .name{ width: 13rem; font-size: 0.75rem; }
+.movieBox .age{ padding: 0 1rem; box-sizing: border-box; font-size: 0.75rem; }
+.movieBox a.active{ background-color: #24125f; color: #fff; }
+.timeBox{ position: relative; float: right; width: 100%; height: 23rem; margin-top: 30px; box-sizing: border-box; border: 1px solid #999; }
+.timeBox .text{ position: absolute; top: calc(50%); left: calc(50% - 6.5rem); font-size: 0.75rem; font-weight: 400; color: #666; }
+.timeBox ul{ display: flex; flex-wrap: wrap; }
+.timeBox li{ width: 6rem; height: 5rem; margin: 1rem; box-sizing: border-box; border: 1px solid #333; border-radius: 10px; }
+.timeBox a{ display: block; width: 100%; height: 100%; padding: 0.5rem; box-sizing: border-box; }
+.timeBox h5{ float: left; width: 50%; font-weight: 400; font-size: 1rem; text-align: center; }
+.timeBox h6{ float: right; width: 50%; font-weight: 400; font-size: 1rem; text-align: center; }
+.timeBox .total{ font-size: 0.675rem; text-align: center; }
+.timeBox .available{ font-size: 0.675rem; text-align: center; }
+
+/* schedule */
+#scheduleBox{ overflow-x: scroll; height: 40rem; margin: 2rem 15px 6rem; padding: 1rem; box-sizing: border-box; border-radius: 15px; border: 3px solid #24125f; }
+#scheduleBox h3{ padding-bottom: 2rem; box-sizing: border-box; font-size: 1.125rem; font-weight: 700; color: #333; }
+#scheduleBox h4{ padding-left: 1.2rem; box-sizing: border-box; font-size: 1rem; font-weight: 700; color: #333; background-image: url(../images/ticket/armchair01.png); background-repeat: no-repeat; background-position: left; background-size: 1.1rem; }
+#scheduleBox .time{ display: flex; width: 100px; margin: 1rem 0; box-sizing: border-box; }
+#scheduleBox .time li{ height: 50px; margin-right: 1rem; line-height: 2.5rem; background-color: transparent; border: 1px solid #999; font-size: 0.75rem; text-align: center; }
+#scheduleBox .time .type{ padding-right: 2.5rem; box-sizing: border-box; border: none; font-size: 0.75rem; font-weight: 700; color: #24125f; background-image: url(../images/ticket/next_btn_over.png); background-position: right; background-repeat: no-repeat; background-size: 10px; }

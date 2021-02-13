@@ -34,7 +34,7 @@ header.fixed{ position: fixed; top: 0; z-index: 1000; }
 footer{ height: 165px; background-color: #999; padding: 0 15px; box-sizing: border-box; }
 .fNav ul{ display: flex; justify-content: center; height: 50px; line-height: 50px; }
 .fNav li{ flex: 1; text-align: center; }
-.fNav li:before{ position: relative; left: -20px; top: -2px; content: '|'; color: #333; font-size: 0.68rem; }
+.fNav li:before{ position: relative; left: -1.5rem; top: -2px; content: '|'; color: #333; font-size: 0.68rem; }
 .fNav li:first-child:before{ content: ''; }
 .fNav a{ font-size: 0.75rem; color: #333; }
 .tel, .tel > a{ font-size: 0.675rem; color: #333; }
