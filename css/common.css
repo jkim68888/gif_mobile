@@ -36,8 +36,8 @@ footer{ height: 165px; background-color: #999; padding: 0 15px; box-sizing: bord
 .fNav li{ flex: 1; text-align: center; }
 .fNav li:before{ position: relative; left: -20px; top: -2px; content: '|'; color: #333; font-size: 0.68rem; }
 .fNav li:first-child:before{ content: ''; }
-.fNav a{ font-size: 0.875rem; color: #333; }
-.tel, .tel > a{ font-size: 0.75rem; color: #333; }
+.fNav a{ font-size: 0.75rem; color: #333; }
+.tel, .tel > a{ font-size: 0.675rem; color: #333; }
 .tel{ display: flex; justify-content: center; }
 address{ display: flex; justify-content: center; text-align: center; margin-top: 5px; box-sizing: border-box; font-style: normal; font-size: 0.75rem; color: #333; }
 

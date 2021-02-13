@@ -75,3 +75,17 @@ $(document).ready(function(){
         slidesPerView: '2.5',
     });
 });
+
+
+//event
+$(document).ready(function(){
+    var swiper = new Swiper('#event .swiper-container', {
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+    });
+});
+
+
+
+
+
