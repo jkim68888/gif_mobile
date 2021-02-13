@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* faqBox */
+#faqBox{ height: 50rem; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: pink; }
+#faqBox .searchBox{ width: 18rem; height: 2rem; margin-bottom: 1.5rem; box-sizing: border-box; }
+#faqBox a{ float: right; display: block; width: 2rem; height: 2rem; }
+#faqBox #searchQA{ float: left; width: 15rem; }
+#faqBox img{ width: 2rem; }
+#faqBox .faqWrap{ width: 100%; height: 40rem; }
