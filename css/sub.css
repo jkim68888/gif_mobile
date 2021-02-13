@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-header h2{ margin: 9px 0; font-weight: 700; font-size: 1.75rem; color: #24125f; }
+header h2{ margin: 9px 0; font-weight: 700; font-size: 1.5rem; color: #24125f; }
 #subTabBox{ width: 100%; padding: 15px; box-sizing: border-box; }
 #subTabBox ul{ display: flex; justify-content: flex-start; }
 #subTabBox li{ padding: 10px; box-sizing: border-box; border-bottom: 1px solid #999; }

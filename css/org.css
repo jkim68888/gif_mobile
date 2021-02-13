@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 /*introduce*/
-#introBox{ height: 1000px; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: lightblue; }
-/*color: #24125f;*/
-table{ border-spacing: inherit; border-collapse: separate; }
+#introBox{ height: 60rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
+#introBox h3{ padding-left: 1.7rem; margin-bottom: 0.8rem; box-sizing: border-box; font-size: 1.25rem; font-weight: 400; background-image: url(../images/org/edit_img.png); background-position: left; background-size: 20px; background-repeat: no-repeat; }
+#introBox p{ margin-bottom: 1.5rem; box-sizing: border-box; font-size: 0.875rem; }
+#introBox .first{ margin-bottom: 0.8rem; }
+table{ border-spacing: inherit; border-collapse: separate; border: 2px solid #24125f; }
 
 
 /*identity*/
