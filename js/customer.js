@@ -2,7 +2,6 @@
 $(document).ready(function(){
     var btn = '#faqBox .tabBar > ul';
     var content = '#faqBox .content';
-    var easing = 'easeOutQuart';
     
     $(btn).find('li:first p').addClass('active');
     $(btn).find('li:first a').addClass('active');
@@ -13,8 +12,8 @@ $(document).ready(function(){
         $(btn).find('a').removeClass('active');
         $(this).addClass('active');
         var index = $(this).parent().index();
-        $(content).find('div').stop().slideUp(easing);
-        $(content).find('div').eq(index).stop().slideDown(easing);
+        $(content).find('div').stop().fadeOut(0);
+        $(content).find('div').eq(index).stop().fadeIn(0);
     });
 });
 

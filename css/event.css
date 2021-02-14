@@ -1,2 +1,8 @@
 @charset "UTF-8";
 
+#eventBox{ height: 75rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
+#eventBox img{ height: 12rem; border-radius: 10px; }
+#eventBox ul{ display: flex; flex-wrap: wrap; justify-content: space-between; }
+#eventBox li{ flex: 0 25%; }
+#eventBox h3{ text-align: center; font-size: 1rem; color: #333; }
+#eventBox p{ margin-bottom: 1.5rem; box-sizing: border-box; text-align: center; font-size: 0.875rem; color: #333; }

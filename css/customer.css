@@ -27,14 +27,14 @@
 #personBox .subscript{ position: absolute; top: 2.5rem; right: 1rem; display: inline; font-size: 0.75rem; }
 #personBox tr{ width: 100%; }
 #personBox caption{ width: 100%; margin-bottom: 2.5rem; font-size: 1.25rem; line-height: 1rem; color: #333; font-weight: 700; text-align: left; }
-#personBox th{ width: 40%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
-#personBox td{ width: 60%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
+#personBox th{ width: 30%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
+#personBox td{ width: 70%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
 #personBox label{ font-size: 0.875rem; }
 #personBox .title{ font-size: 0.95rem; }
-#personBox .nameBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#personBox .titleBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#personBox .cBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#personBox .phoneBox{ width: 4rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
+#personBox .nameBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .titleBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .cBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .phoneBox{ width: 3.8rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
 #personBox .last{ border-bottom: 1px solid #333; }
 #personBox .btnWrap{ width: 100%; padding: 1rem 0; text-align: center; }
 #personBox button{ width: 7rem; height: 2.2rem; border: none; border-radius: 5px; background-color: #24125f; color: #fff; font-size: 0.875; font-weight: 500; }
@@ -47,17 +47,17 @@
 #lostBox .subscript{ position: absolute; top: 2.5rem; right: 1rem; display: inline; font-size: 0.75rem; }
 #lostBox tr{ width: 100%; }
 #lostBox caption{ width: 100%; margin-bottom: 2.5rem; font-size: 1.25rem; line-height: 1rem; color: #333; font-weight: 700; text-align: left; }
-#lostBox th{ width: 40%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
-#lostBox td{ width: 60%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
+#lostBox th{ width: 30%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
+#lostBox td{ width: 70%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
 #lostBox label{ font-size: 0.875rem; }
 #lostBox .title{ font-size: 0.95rem; }
-#lostBox .nameBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#lostBox .titleBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#lostBox .cBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
-#lostBox .phoneBox{ width: 4rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
+#lostBox .nameBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .titleBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .cBox{ width: 100%; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .phoneBox{ width: 3.8rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
 #lostBox .last{ border-bottom: 1px solid #333; }
 #lostBox .btnWrap{ width: 100%; padding: 1rem 0; text-align: center; }
-#lostBox button{ width: 7rem; height: 2.2rem; border: none; border-radius: 5px; background-color: #24125f; color: #fff; font-size: 0.875; font-weight: 500; }
+#lostBox button{ width: 7rem; height: 2.2rem; border: none; border-radius: 5px; background-color: #24125f; color: #fff; font-size: 0.875rem; font-weight: 500; }
 
 
 
