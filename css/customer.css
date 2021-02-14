@@ -1,9 +1,76 @@
 @charset "UTF-8";
 
 /* faqBox */
-#faqBox{ height: 50rem; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: pink; }
+#faqBox{ height: 38rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
 #faqBox .searchBox{ width: 18rem; height: 2rem; margin-bottom: 1.5rem; box-sizing: border-box; }
 #faqBox a{ float: right; display: block; width: 2rem; height: 2rem; }
 #faqBox #searchQA{ float: left; width: 15rem; }
 #faqBox img{ width: 2rem; }
-#faqBox .faqWrap{ width: 100%; height: 40rem; }
+#faqBox .faqWrap{ width: 100%; height: 35rem; }
+#faqBox .tabBar{ width: 100%; height: 5rem; }
+#faqBox .tabBar ul{ display: flex; justify-content: space-between; }
+#faqBox .tabBar li{ position: relative; width: 18%; height: 5rem; margin-right: 0.5%; box-sizing: border-box; border: 1px solid #e1bc54; border-radius: 5px 5px 0 0; }
+#faqBox .tabBar a{ display: block; width: 100%; height: 100%; }
+#faqBox .tabBar li:last-child{ margin-right: 0; }
+#faqBox .tabBar p{ position: absolute; top: calc(50% - 1.5rem); left: 0; right: 0; bottom: 0; margin: auto; width: 100%; text-align: center; font-size: 0.95rem; color: #333; }
+#faqBox .content{ position: relative; width: 100%; height: 30rem; }
+#faqBox .content div{ display: none; position: absolute; top: 0; left: 0; width: 100%; height: 30rem; background-image: url(../images/customer/bg02.jpg); background-size: 100% 100%; background-repeat: no-repeat; background-position: center; background-repeat: no-repeat; border-radius: 0 0 10px 10px; }
+#faqBox .content li{ width: 100%; height: 2.5rem; line-height: 2.5rem; margin: 0 auto; border-bottom: 1px solid #999; }
+#faqBox .content a{ display: block; width: 100%; font-size: 0.75rem; color: #333; }
+#faqBox .tabBar a.active{ width: 100%; height: 100%; border-radius: 5px 5px 0 0; background-color: #ebebeb; }
+
+/* person */
+#personBox{ height: 34rem; margin: 2rem 15px 6rem; box-sizing: border-box; }
+#personBox form{ position: relative; width: 100%; height: 100%; padding: 0.5rem; box-sizing: border-box; }
+#personBox .star{ position: relative; top: 0.1rem; font-size: 0.75rem; color: #24125f; font-weight: 700; }
+#personBox table{ width: 100%; border-top: 1px solid #333; }
+#personBox .subscript{ position: absolute; top: 2.5rem; right: 1rem; display: inline; font-size: 0.75rem; }
+#personBox tr{ width: 100%; }
+#personBox caption{ width: 100%; margin-bottom: 2.5rem; font-size: 1.25rem; line-height: 1rem; color: #333; font-weight: 700; text-align: left; }
+#personBox th{ width: 40%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
+#personBox td{ width: 60%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
+#personBox label{ font-size: 0.875rem; }
+#personBox .title{ font-size: 0.95rem; }
+#personBox .nameBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .titleBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .cBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#personBox .phoneBox{ width: 4rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
+#personBox .last{ border-bottom: 1px solid #333; }
+#personBox .btnWrap{ width: 100%; padding: 1rem 0; text-align: center; }
+#personBox button{ width: 7rem; height: 2.2rem; border: none; border-radius: 5px; background-color: #24125f; color: #fff; font-size: 0.875; font-weight: 500; }
+
+/* lost */
+#lostBox{ height: 34rem; margin: 2rem 15px 6rem; box-sizing: border-box; } 
+#lostBox form{ position: relative; width: 100%; height: 100%; padding: 0.5rem; box-sizing: border-box; }
+#lostBox .star{ position: relative; top: 0.1rem; font-size: 0.75rem; color: #24125f; font-weight: 700; }
+#lostBox table{ width: 100%; border-top: 1px solid #333; }
+#lostBox .subscript{ position: absolute; top: 2.5rem; right: 1rem; display: inline; font-size: 0.75rem; }
+#lostBox tr{ width: 100%; }
+#lostBox caption{ width: 100%; margin-bottom: 2.5rem; font-size: 1.25rem; line-height: 1rem; color: #333; font-weight: 700; text-align: left; }
+#lostBox th{ width: 40%; background-color: #ededed; border-bottom: 1px solid #fff; text-align: left; font-size: 0.675rem; font-weight: 700; }
+#lostBox td{ width: 60%; border-bottom: 1px solid #ccc; padding: 0.5rem; box-sizing: border-box; }
+#lostBox label{ font-size: 0.875rem; }
+#lostBox .title{ font-size: 0.95rem; }
+#lostBox .nameBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .titleBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .cBox{ border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; }
+#lostBox .phoneBox{ width: 4rem; border: 1px solid #ccc; box-sizing: border-box; padding-left: 5px; margin-top: 10px; }
+#lostBox .last{ border-bottom: 1px solid #333; }
+#lostBox .btnWrap{ width: 100%; padding: 1rem 0; text-align: center; }
+#lostBox button{ width: 7rem; height: 2.2rem; border: none; border-radius: 5px; background-color: #24125f; color: #fff; font-size: 0.875; font-weight: 500; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

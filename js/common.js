@@ -65,7 +65,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('header .ticket a').click(function(e){
         e.preventDefault();
-        alert('예매한 티켓 보기는 로그인 하신 후 이용할 수 있습니다.');
+        alert('예매한 티켓보기는 현재 서비스 점검중입니다. 다음에 다시 이용부탁드립니다.');
     });
 });
 
