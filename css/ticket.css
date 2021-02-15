@@ -39,7 +39,7 @@
 .timeBox{ position: relative; float: right; width: 100%; height: 23rem; margin-top: 30px; box-sizing: border-box; border: 1px solid #999; }
 .timeBox .text{ position: absolute; top: calc(50%); left: calc(50% - 6.5rem); font-size: 0.75rem; font-weight: 400; color: #666; }
 .timeBox ul{ display: flex; flex-wrap: wrap; }
-.timeBox li{ width: 6rem; height: 5rem; margin: 1rem; box-sizing: border-box; border: 1px solid #333; border-radius: 10px; }
+.timeBox li{ width: 40%; height: 5rem; margin: 5%; box-sizing: border-box; border: 1px solid #333; border-radius: 10px; }
 .timeBox a{ display: block; width: 100%; height: 100%; padding: 0.5rem; box-sizing: border-box; }
 .timeBox h5{ float: left; width: 50%; font-weight: 400; font-size: 1rem; text-align: center; }
 .timeBox h6{ float: right; width: 50%; font-weight: 400; font-size: 1rem; text-align: center; }
