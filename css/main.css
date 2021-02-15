@@ -49,9 +49,9 @@ main .slide04{ background-image: url(../images/main/main_bn04.jpg); }
 #guide li img{ height: 2rem; padding-top: 0.6rem; margin: 0 auto; box-sizing: border-box; }
 
 /*event*/
-#event{ width: 100%; padding: 0 0 10px 15px; }
+#event{ width: 100%; padding: 0 0 10px 15px; box-sizing: border-box; }
 #event .swiper-container{ width: 100%; }
-#event .swiper-slide{ width: 190px; }
+#event .swiper-slide{ width: 192px; }
 #event a{ display: block; }
 #event img{ width: 11rem; border-radius: 10px; box-shadow: 1px 1px 1px rgba(0,0,0,0.2); }
 
@@ -59,7 +59,7 @@ main .slide04{ background-image: url(../images/main/main_bn04.jpg); }
 #notice{ height: 14rem; padding: 0 15px; margin-bottom: 1.5rem; box-sizing: border-box; }
 #notice ul{ display: flex; flex-wrap: wrap; width: 100%; height: 9rem; padding: 0.5rem 0.8rem; box-sizing: border-box; border-radius: 5px; background-color: #fff; box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2); }
 #notice li{ flex: 100%; width: 100%; line-height: 2.5rem; }
-#notice a{ float: left; width: 50%; padding-left: 15px; box-sizing: border-box; background-image: url(../images/main/notice_circle_img.png); background-size: 8px 8px; background-position: left 17px; background-repeat: no-repeat; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 0.75rem; color: #333; }
+#notice a{ float: left; width: 65%; padding-left: 15px; box-sizing: border-box; background-image: url(../images/main/notice_circle_img.png); background-size: 8px 8px; background-position: left 17px; background-repeat: no-repeat; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 0.75rem; color: #333; }
 #notice p{ float: right; padding-right: 5px; box-sizing: border-box; font-size: 0.75rem; color: #333; }
 
 /*customer*/

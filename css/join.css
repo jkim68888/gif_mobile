@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/* join common */
+#subBox{ height: auto; margin: 2rem 15px 6rem; box-sizing: border-box; background-color: pink; }
+.joinFlow{ width: 100%; overflow: hidden; padding: 2rem 0; }
+.joinFlow li{ position: relative; float: left; width: 33.33%; height: 90px; border-top: 2px solid #999; padding-top: 15px; box-sizing: border-box; color: #666; font-size: 18px; font-weight: 700; }
+.joinFlow li:before{ content: ''; position: absolute; top: -5px; left: 0; display: block; width: 8px; height: 8px; border-radius: 4px; background-color: #666; }
+.joinFlow li.active{ border-top: 2px solid #24125f; color: #24125f; }
+.joinFlow li.active:before{ background-color: #24125f; }
+#subBox p.numTop{ margin-bottom: 30px; color: #999; font-size: 24px; font-weight: 700; text-align: center; }
+.bottomList{ width: 100%; overflow: hidden; text-align: center; }
+.bottomList h6{ margin-bottom: 8px; font-size: 0.95rem; color: #333; }
+#subBox .bottomList p{ width: 100%; margin-bottom: 8px; text-align: center; font-size: 0.875rem; }
+.bottomList a{ display: inline-block; width: 19%; height: 30px; border-bottom: 2px solid #24125f; box-sizing: border-box; color: #24125f; text-align: center; font-size: 0.95rem; }
+
+/* joinClause */
+.joinClause{ width: 100%; overflow: hidden; padding: 1.5rem; box-sizing: border-box; margin-bottom: 50px; background-color: #ededed; }
+#subBox .joinClause h4{ width: 100%; margin-bottom: 30px; background-image: none; text-align: center; color: #333; font-size: 1.25rem; }
+
+
+/* 회원 약관 동의 */
+.joinClause .agreeArea{ width: 100%; height: 16rem; margin-bottom: 20px; padding: 20px; box-sizing: border-box; overflow-x: hidden; background-color: #fff; }
+#subBox .joinClause .agreeArea h5{ margin-bottom: 20px; font-size: 1rem; color: #333; }
+#subBox .joinClause .agreeArea h6{ margin-bottom: 20px; font-size: 0.95rem; color: #333; }
+.joinClause .agreeArea div.agreeP{ margin-bottom: 20px; }
+.joinClause .agreeArea .agreeP{ text-indent: 1rem; font-size: 0.875rem;  }
+
+.joinClause .checkBox, .joinClause .allChk{ width: 100%; overflow: hidden; margin-bottom: 3rem; }
+.joinClause .allChk{ text-align: center; }
+.joinClause .checkBox label, .joinClause .allChk label{ position: relative; top: -2px; left: 5px; }
+
+.joinClause .nextBtn{ width: 100%; overflow: hidden; text-align: center; }
+.joinClause .nextBtn a{ display: inline-block; width: 100%; height: 3.5rem; background-color: #24125f; color: #ededed; font-size: 1.25rem; line-height: 3.5rem; }
+
+
+/* 회원 정보 동의 */
+.joinClause .orange{ color: #24125f; font-size: 0.75rem; }
+.joinClause table{ width: 100%; border-top: 2px solid #24125f; border-bottom: 1px solid #24125f; margin-bottom: 1.5rem; }
+.joinClause caption{ width: 100%; height: 2rem; font-size: 20px; color: #333; font-weight: 500; text-align: left; }
+#subBox .joinClause th{ width: 40%; padding: 0.5rem; border-top: none; border-bottom: 1px solid #fff; border-left: none; box-sizing: border-box;  background-color: #ccc; text-align: left; color: #333; font-size: 0.875rem; font-weight: 500; }
+#subBox .joinClause td{ width: 60%; padding: 1rem; border-bottom: 1px solid #ccc; border-right: none; box-sizing: border-box; background-color: #fff; text-align: left; }
+#subBox .joinClause .last{ border-bottom: none; font-size: 0.875rem; }
+.joinClause th label{ color: #333; font-size: 0.875rem; font-weight: 500; }
+.joinClause td label{ font-size: 0.875rem; }
+.joinClause th .orange{ position: relative; top: 4px; }
+.joinClause .box01{ width: 100%; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+.joinClause .box02{ width: 4.5rem; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+.joinClause .box02 + label{ position: relative; left: -5px; margin-right: 10px; }
+.joinClause .at{ position: relative; left: -4px; }
+.joinClause .box03{ width: 7.6rem; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+.joinClause table button{ width: 6rem; height: 2.5rem; border: none; margin: 0.5rem; box-sizing: border-box; background-color: #24125f; color: #fff; }
+.joinClause table .red{ display: none; font-size: 0.875rem; color: #ff0000; }
+#postNum{ margin-bottom: 10px; }
+.joinClause input[type=radio]{ margin: 1rem 0; }
+.joinClause input[type=radio] + label{ margin-right: 0.5rem; }
+.joinClause .btnWrap{ width: 100%; margin-bottom: 1.5rem; text-align: center; }
+.joinClause .btnWrap button{ width: 7rem; height: 2.5rem; border: none; color: #fff; font-size: 0.95rem; font-weight: 500; }
+.joinClause .btnWrap button[type=submit]{ background-color: #24125f; }
+.joinClause .btnWrap button[type=button]{ background-color: #666; }
+
+/* 우편번호 */
+#layer{ display:none; position:fixed; overflow:hidden; z-index:1; -webkit-overflow-scrolling:touch; }
+#btnCloseLayer{ cursor:pointer; position:absolute; right:-3px; top:-3px; z-index:1; }
+
+/* 회원가입완료 */
+.joinClause .orange.big{ font-size: 24px; }
+#subBox p.complete{ margin-bottom: 100px; text-align: center; color: #333; line-height: 50px; font-weight: 500; }
+.joinClause .loginBtn{ display: block; width: 300px; height: 50px; margin: 0 auto 50px; background-color: #24125f; color: #fff; font-size: 20px; font-weight: 500; text-align: center; line-height: 50px; }

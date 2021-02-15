@@ -1,40 +1,39 @@
 @charset "UTF-8";
 
-#currentMovie, #futureMovie, #exhibitMovie{ width: 100%; height: 1800px; padding: 20px 15px; box-sizing: border-box; }
+#currentMovie, #futureMovie, #exhibitMovie{ width: 100%; height: 120rem; padding: 20px 15px; box-sizing: border-box; }
 #exhibitMovie{ height: 950px; }
 
 /*currentMovie*/
 #currentMovie ul{ display: flex; flex-wrap: wrap; }
-#currentMovie li{ flex: 0 46%; position: relative; width: 150px; height: 320px; margin-right: 8%; margin-bottom: 8%; box-sizing: border-box; cursor: pointer; }
+#currentMovie li{ position: relative; width: 45%; margin-right: 10%; margin-bottom: 10%; box-sizing: border-box; }
 #currentMovie li:nth-child(even){ margin-right: 0; }
-#currentMovie .imgBox{ display: block; width: 100%; height: 13rem; }
+#currentMovie .imgBox{ display: block; width: 100%; }
 #currentMovie img{ width: 100%; height: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }
-#currentMovie h3{ float: left; width: 2.5rem; height: 2.5rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 2.5rem; text-align: center; font-weight: 400; font-size: 1rem; border-radius: 2.5rem; }
-#currentMovie h4{ float: right; width: 7rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1.215rem; color: #333; }
-#currentMovie li:nth-child(4) h4{ width: 7rem; font-size: 0.875rem; }
-#currentMovie .rate{ float: left; text-align: center; margin: 0 2rem; }
-#currentMovie li:nth-child(1) .rate, #currentMovie li:nth-child(2) .rate{ margin: 0 1.8rem; }
-#currentMovie .grade{ text-align: center; }
+#currentMovie h3{ float: left; width: 25%; height: 2.3rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 2rem; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
+#currentMovie h4{ float: right; width: 75%; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
+#currentMovie li:nth-child(4) h4{ font-size: 0.75rem; }
+#currentMovie .rate{ width: 100%; float: left; text-align: center; }
+#currentMovie .grade{ width: 100%; text-align: center; }
 
 /*futureMovie*/
 #futureMovie ul{ display: flex; flex-wrap: wrap; }
-#futureMovie li{ flex: 0 46%; position: relative; width: 150px; height: 320px; margin-right: 8%; margin-bottom: 8%; box-sizing: border-box; cursor: pointer; }
+#futureMovie li{ position: relative; width: 45%; margin-right: 10%; margin-bottom: 10%; box-sizing: border-box; }
 #futureMovie li:nth-child(even){ margin-right: 0; }
 #futureMovie .imgBox{ display: block; width: 100%; height: 13rem; }
 #futureMovie img{ width: 100%; height: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }
-#futureMovie h3{ float: left; width: 2.5rem; height: 2.5rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 2.5rem; text-align: center; font-weight: 400; font-size: 1rem; border-radius: 2.5rem; }
-#futureMovie h4{ float: right; width: 7rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1.215rem; color: #333; }
-#futureMovie li:nth-child(5) h4, #futureMovie li:nth-child(7) h4{ width: 7rem; font-size: 1rem; }
-#futureMovie .rate{ float: left; text-align: center; margin: 0 2rem; }
-#futureMovie .grade{ text-align: center; }
+#futureMovie h3{ float: left; width: 25%; height: 2.3rem; margin-top: 0.5rem; box-sizing: border-box; line-height: 2rem; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
+#futureMovie h4{ float: right; width: 75%; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
+#futureMovie li:nth-child(5) h4, #futureMovie li:nth-child(7) h4{ font-size: 1rem; }
+#futureMovie .rate{ width: 100%; float: left; text-align: center; }
+#futureMovie .grade{ width: 100%; text-align: center; }
 
 /*exhibitMovie*/
 #exhibitMovie ul{ display: flex; flex-wrap: wrap; }
-#exhibitMovie li{ flex: 0 46%; position: relative; width: 150px; height: 200px; margin-right: 8%; margin-bottom: 30%; box-sizing: border-box; cursor: pointer; }
+#exhibitMovie li{ position: relative; width: 45%; margin-right: 10%; margin-bottom: 10%; box-sizing: border-box; }
 #exhibitMovie li:nth-child(odd){ margin-left: 0; }
 #exhibitMovie li:nth-child(even){ margin-right: 0; }
 #exhibitMovie img{ width: 100%; height: 200px; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }
-#exhibitMovie h3{ margin-top: 10px; box-sizing: border-box; line-height: 25px; text-align: center; font-weight: 400; font-size: 1.125rem; }
+#exhibitMovie h3{ margin-top: 10px; box-sizing: border-box; line-height: 1.5rem; text-align: center; font-weight: 400; font-size: 1.125rem; }
 
 
 
