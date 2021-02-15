@@ -5,4 +5,4 @@
 #eventBox ul{ display: flex; flex-wrap: wrap; justify-content: space-between; }
 #eventBox li{ width: 46%; }
 #eventBox h3{ text-align: center; font-size: 1rem; color: #333; }
-#eventBox p{ margin-bottom: 1.5rem; box-sizing: border-box; text-align: center; font-size: 0.875rem; color: #333; }
+#eventBox p{ margin-bottom: 1.5rem; box-sizing: border-box; text-align: center; font-size: 0.75rem; color: #333; }
