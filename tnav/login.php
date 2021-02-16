@@ -42,7 +42,7 @@
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="myPage.php">
+                        <a href="join_form_modify.php">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>

@@ -113,7 +113,7 @@
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="../tnav/myPage.html">
+                        <a href="../tnav/join_form_modify.html">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>

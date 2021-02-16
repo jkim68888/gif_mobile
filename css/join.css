@@ -64,5 +64,5 @@
 
 /* 회원가입완료 */
 .joinClause .orange.big{ font-size: 24px; }
-#subBox p.complete{ margin-bottom: 100px; text-align: center; color: #333; line-height: 50px; font-weight: 500; }
-.joinClause .loginBtn{ display: block; width: 300px; height: 50px; margin: 0 auto 50px; background-color: #24125f; color: #fff; font-size: 20px; font-weight: 500; text-align: center; line-height: 50px; }
+#subBox p.complete{ margin-bottom: 3rem; text-align: center; color: #333; line-height: 2.5rem; font-weight: 500; }
+.joinClause .loginBtn{ display: block; width: 14rem; height: 3rem; margin: 0 auto 1.5rem; background-color: #24125f; color: #fff; font-size: 1rem; font-weight: 500; text-align: center; line-height: 3rem; }
