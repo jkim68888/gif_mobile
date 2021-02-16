@@ -172,7 +172,7 @@
                         <div class="txtWrap">
                             <h3>에듀케이션</h3>
                             <p>예매율 23.8% · 평점 <i>3.9</i></p>
-                            <button type="button" onclick="location.href='ticket/ticketing.html'">예매하기</button>
+                            <button type="button" onclick="location.href='ticket/ticketing.php'">예매하기</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -183,7 +183,7 @@
                         <div class="txtWrap">
                             <h3>잔칫날</h3>
                             <p>예매율 20.8% · 평점 <i>3.4</i></p>
-                            <button type="button" onclick="location.href='ticket/ticketing.html'">예매하기</button>
+                            <button type="button" onclick="location.href='ticket/ticketing.php'">예매하기</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -194,7 +194,7 @@
                         <div class="txtWrap">
                             <h3>내언니전지현과 나</h3>
                             <p>예매율 15.2% · 평점 <i>3.6</i></p>
-                            <button type="button" onclick="location.href='ticket/ticketing.html'">예매하기</button>
+                            <button type="button" onclick="location.href='ticket/ticketing.php'">예매하기</button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -205,7 +205,7 @@
                         <div class="txtWrap">
                             <h3>겨울밤에</h3>
                             <p>예매율 10.1% · 평점 <i>3.0</i></p>
-                            <button type="button" onclick="location.href='ticket/ticketing.html'">예매하기</button>
+                            <button type="button" onclick="location.href='ticket/ticketing.php'">예매하기</button>
                         </div>
                     </div>
                 </div>
