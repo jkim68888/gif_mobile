@@ -21,7 +21,7 @@
     <body>
         <div class="panel">
             <div class="pTop">
-                <? include "../lib/top_nav.php"; ?>
+                <? include "../lib/top_nav_sub.php"; ?>
             </div>
             <div class="topNav">
                 <ul>

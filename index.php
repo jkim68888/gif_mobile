@@ -41,7 +41,7 @@
         </div>
         <div class="panel">
             <div class="pTop">
-                <? include "./lib/top_nav.php"; ?>
+                <? include "./lib/top_nav_index.php"; ?>
             </div>
             <div class="topNav">
                 <ul>
