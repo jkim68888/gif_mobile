@@ -37,14 +37,14 @@
 .joinClause .orange{ color: #24125f; font-size: 0.75rem; }
 .joinClause table{ width: 100%; border-top: 2px solid #24125f; border-bottom: 1px solid #24125f; margin-bottom: 1.5rem; }
 .joinClause caption{ width: 100%; height: 2rem; font-size: 20px; color: #333; font-weight: 500; text-align: left; }
-#subBox .joinClause th{ width: 40%; padding: 0.5rem; border-top: none; border-bottom: 1px solid #fff; border-left: none; box-sizing: border-box;  background-color: #ccc; text-align: left; color: #333; font-size: 0.875rem; font-weight: 500; }
-#subBox .joinClause td{ width: 60%; padding: 1rem; border-bottom: 1px solid #ccc; border-right: none; box-sizing: border-box; background-color: #fff; text-align: left; }
+#subBox .joinClause th{ width: 30%; padding: 0.5rem; border-top: none; border-bottom: 1px solid #fff; border-left: none; box-sizing: border-box;  background-color: #ccc; text-align: left; color: #333; font-size: 0.875rem; font-weight: 500; }
+#subBox .joinClause td{ width: 70%; padding: 1rem; border-bottom: 1px solid #ccc; border-right: none; box-sizing: border-box; background-color: #fff; text-align: left; }
 #subBox .joinClause .last{ border-bottom: none; font-size: 0.875rem; }
 .joinClause th label{ color: #333; font-size: 0.875rem; font-weight: 500; }
 .joinClause td label{ font-size: 0.875rem; }
 .joinClause th .orange{ position: relative; top: 4px; }
 .joinClause .box01{ width: 100%; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
-.joinClause .box02{ width: 4.5rem; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
+.joinClause .box02{ width: 5rem; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
 .joinClause .box02 + label{ position: relative; left: -5px; margin-right: 10px; }
 .joinClause .at{ position: relative; left: -4px; }
 .joinClause .box03{ width: 7.6rem; height: 1.5rem; padding: 0 10px; border: 1px solid #ccc; box-sizing: border-box; margin-right: 5px; }
