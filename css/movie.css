@@ -7,24 +7,24 @@
 #currentMovie ul{ display: flex; flex-wrap: wrap; }
 #currentMovie li{ position: relative; width: 45%; margin-right: 10%; margin-bottom: 10%; box-sizing: border-box; }
 #currentMovie li:nth-child(even){ margin-right: 0; }
-#currentMovie .imgBox{ display: block; width: 100%; }
+#currentMovie .imgBox{ position: relative; display: block; width: 100%; }
 #currentMovie img{ width: 100%; height: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }
-#currentMovie h3 { float: left; width: 10vw; height: 10vw; margin-top: 0.5rem; box-sizing: border-box; line-height: 10vw; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
-#currentMovie h4{ float: right; width: 75%; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
-#currentMovie li:nth-child(4) h4{ font-size: 0.75rem; }
-#currentMovie .rate{ width: 100%; float: left; text-align: center; }
+#currentMovie h3 { position: absolute; top: 0.5rem; left: 0.3rem; width: 10vw; height: 10vw; line-height: 10vw; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
+#currentMovie h4{ width: 100%; line-height: 2rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
+#currentMovie li:nth-child(4) h4{ font-size: 0.875rem; }
+#currentMovie .rate{ width: 100%; text-align: center; }
 #currentMovie .grade{ width: 100%; text-align: center; }
 
 /*futureMovie*/
 #futureMovie ul{ display: flex; flex-wrap: wrap; }
 #futureMovie li{ position: relative; width: 45%; margin-right: 10%; margin-bottom: 10%; box-sizing: border-box; }
 #futureMovie li:nth-child(even){ margin-right: 0; }
-#futureMovie .imgBox{ display: block; width: 100%; height: 13rem; }
+#futureMovie .imgBox{ position: relative; display: block; width: 100%; }
 #futureMovie img{ width: 100%; height: 100%; border-radius: 10px; box-shadow: 2px 2px 2px rgba(0,0,0,0.2); }
-#futureMovie h3{ float: left; width: 10vw; height: 10vw; margin-top: 0.5rem; box-sizing: border-box; line-height: 10vw; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
-#futureMovie h4{ float: right; width: 75%; line-height: 3rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
+#futureMovie h3{ position: absolute; top: 0.5rem; left: 0.3rem; width: 10vw; height: 10vw; line-height: 10vw; text-align: center; font-weight: 400; font-size: 0.75rem; border-radius: 10rem; }
+#futureMovie h4{ width: 100%; line-height: 2rem; text-align: center; font-weight: 700; font-size: 1rem; color: #333; }
 #futureMovie li:nth-child(5) h4, #futureMovie li:nth-child(7) h4{ font-size: 1rem; }
-#futureMovie .rate{ width: 100%; float: left; text-align: center; }
+#futureMovie .rate{ width: 100%; text-align: center; }
 #futureMovie .grade{ width: 100%; text-align: center; }
 
 /*exhibitMovie*/
