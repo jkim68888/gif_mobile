@@ -8,24 +8,24 @@
             
             *{ padding: 0; margin: 0; }
             .idChkBox{
-                width: 300px; height: 300px;
+                width: 100%; height: 100%;
                 border: 5px solid #24125f;
-                box-sizing: border-box; padding: 20px;
+                box-sizing: border-box; padding: 2rem;
                 text-align: center;
             }
-            .idChkBox h1{ margin-bottom: 30px; }
-            .idChkBox h3{ margin-bottom: 20px; }
+            .idChkBox h1{ margin-bottom: 2rem; }
+            .idChkBox h3{ margin-bottom: 1rem; font-size: 1.25rem;}
             .idChkBox a{
-                padding: 5px 20px;
+                padding: 1rem 2.5rem;
                 background-color: #24125f; color: #fff;
-                text-decoration: none; 
+                text-decoration: none; font-size: 1rem;
             }
-            .idChkBox p{ color: #333; margin-bottom: 20px; }
+            .idChkBox p{ color: #333; margin-bottom: 2rem; font-size: 1rem; }
         </style>
     </head>
     <body>
         <div class="idChkBox">
-            <h1><img src="../images/common/gnb_fixed_logo.png" alt="G.I.F 로고"></h1>
+            <h1><img src="../images/tnav/logo.png" alt="G.I.F 로고"></h1>
             <h3>아이디 중복 체크</h3>
             <p>
             <?

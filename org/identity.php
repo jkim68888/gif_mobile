@@ -148,11 +148,11 @@
                 </ul>
             </div>
             <div class="tel">ARS) <a href="tel:1544-0070">1544-0070</a></div>
-            <address>
+            <a href="#null" class="address">
                 대표자명 홍길동 · 사업자등록번호 211-86-59478<br>
                 · 통신판매업신고번호 제 833호<br>
                 &copy; GwangjuIndipendentFilm, Inc. 
-            </address>
+            </a>
         </footer>
     </body>
 </html>

@@ -173,21 +173,13 @@
             </div>
         </header>
         <div id="subBox">
-            <h2>회원가입</h2>
-            <div class="joinFlow">
-                <ul>
-                    <li class="active">01<br>회원약관동의</li>
-                    <li class="active">02<br>회원정보등록</li>
-                    <li>03<br>회원가입완료</li>
-                </ul>
-            </div>
             <div class="joinClause">
                 <p class="numTop">01</p>
                 <h4>기본정보 (<span class="orange">*</span>는 필수 정보입니다)</h4>
                 <!--데이터 전송은 insert.php에 해서 DB에 데이터를 추가할것!-->
                 <form name="join_form" id="joinForm" method="post" action="modify.php">
                     <table>
-                        <caption>회원정보</caption>
+                        <caption>정보수정</caption>
                         <tr>
                             <th>
                                 <span class="orange">*</span>
@@ -433,11 +425,11 @@
                 </ul>
             </div>
             <div class="tel">ARS) <a href="tel:1544-0070">1544-0070</a></div>
-            <address>
+            <a href="#null" class="address">
                 대표자명 홍길동 · 사업자등록번호 211-86-59478<br>
                 · 통신판매업신고번호 제 833호<br>
                 &copy; GwangjuIndipendentFilm, Inc. 
-            </address>
+            </a>
         </footer>
     </body>
 </html>

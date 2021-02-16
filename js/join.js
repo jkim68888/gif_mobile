@@ -284,13 +284,7 @@ $(document).ready(function(){
         
         var idValue = $('#joinId').val(); //아이디입력상자의 value값을 담는 변수
         
-        //새창을 가운데 오게 하기 위한 공식
-        var w = $(window).width();
-        var h = $(window).height();
-        var leftValue = (w / 2) - 150; //새창사이즈의 반을 뺌
-        var topValue = (h / 2) - 150;
-        
-        window.open('../tnav/check_id.php?id=' + idValue,'idCheck','width=300, height=300, top=' + topValue + ',left=' + leftValue);
+        window.open('../tnav/check_id.php?id=' + idValue,'idCheck');
     });
 });
 
