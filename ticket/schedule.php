@@ -1,16 +1,17 @@
+<? include "../lib/session.php" ?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex,nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>로그인 - G.I.F</title>
+        <title>상영시간표 - G.I.F</title>
         <link rel="shortcut-icon" href="../images/common/favicon_16x16.png">
         <link rel="icon" sizes="192x192" href="../images/common/favicon_android_192x192.png">
         <link rel="apple-touch-icon" sizes="180x180" href="../images/common/favicon_ios_180x180.png">
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/sub.css">
-        <link rel="stylesheet" href="../css/tnav.css">
+        <link rel="stylesheet" href="../css/ticket.css">
         <script src="../js/jquery-1.12.0.min.js"></script>
         <script src="../js/jquery.easing.1.3.js"></script>
         <script src="../js/common.js"></script>
@@ -18,44 +19,30 @@
     <body>
         <div class="panel">
             <div class="pTop">
-                <ul>
-                    <li class="close">
-                        <a href="#close_panel">
-                            <img src="../images/common/panel_close_icon.png" alt="패널 닫기 버튼">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="login.html"><span>로그인</span> 후 이용하세요!</a>
-                    </li>
-                    <li class="home">
-                        <a href="../index.html">
-                            <img src="../images/common/panel_home_icon.png" alt="홈으로 아이콘">
-                        </a>
-                    </li>
-                </ul>
+                <? include "../lib/top_nav.php"; ?>
             </div>
             <div class="topNav">
                 <ul>
-                    <li><a href="join.html">회원가입</a></li>
-                    <li><a href="nonMember.html">비회원 예매확인</a></li>
+                    <li><a href="../tnav/join.php">회원가입</a></li>
+                    <li><a href="../tnav/nonMember.php">비회원 예매확인</a></li>
                 </ul>
             </div>
             <div class="gnb01">
                 <ul class="first">
                     <li>
-                        <a href="../movie/current.html">
+                        <a href="../movie/current.php">
                             <img src="../images/common/panel_movie_icon.png" alt="영화 아이콘">
                             <p>영화</p>
                         </a>
                     </li>
                     <li class="ticket">
-                        <a href="../ticket/ticketing.html">
+                        <a href="ticketing.php">
                             <img src="../images/common/panel_ticketing_icon.png" alt="예매 아이콘">
                             <p>예매</p>
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="myPage.html">
+                        <a href="../tnav/myPage.php">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>
@@ -63,19 +50,19 @@
                 </ul>
                 <ul class="last">
                     <li>
-                        <a href="../introduce/about.html">
+                        <a href="../introduce/about.php">
                             <img src="../images/common/panel_independent_icon.png" alt="독립영화 아이콘">
                             <p>독립영화</p>
                         </a>
                     </li>
                     <li class="map">
-                        <a href="../introduce/map.html">
+                        <a href="../introduce/map.php">
                             <img src="../images/common/panel_map_icon.png" alt="오시는길 아이콘">
                             <p>오시는길</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../customer/faq.html">
+                        <a href="../customer/faq.php">
                             <img src="../images/common/panel_customer_icon.png" alt="고객센터 아이콘">
                             <p>고객센터</p>
                         </a>
@@ -85,19 +72,19 @@
             <div class="gnb02">
                 <ul>
                     <li>
-                        <a href="../community/notice.html" class="mainNav">커뮤니티</a>
+                        <a href="../community/notice.php" class="mainNav">커뮤니티</a>
                         <ul class="subNav">
-                            <li><a href="../community/notice.html">공지사항</a></li>
-                            <li><a href="../community/event.html">이벤트</a></li>
-                            <li><a href="../community/news.html">언론</a></li>
+                            <li><a href="../community/notice.php">공지사항</a></li>
+                            <li><a href="../community/event.php">이벤트</a></li>
+                            <li><a href="../community/news.php">언론</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../org/introduce.html" class="mainNav">광주영화영상인연대</a>
+                        <a href="../org/introduce.php" class="mainNav">광주영화영상인연대</a>
                         <ul class="subNav">
-                            <li><a href="../org/introduce.html">단체소개</a></li>
-                            <li><a href="../org/familysite.html">유관단체</a></li>
-                            <li><a href="../org/identity.html">CI</a></li>
+                            <li><a href="../org/introduce.php">단체소개</a></li>
+                            <li><a href="../org/familysite.php">유관단체</a></li>
+                            <li><a href="../org/identity.php">CI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -129,40 +116,72 @@
                     <img src="../images/common/header_menu_icon.png" alt="패널 열기 버튼">
                 </a>
             </div>
-            <h2>로그인</h2>
+            <h2>예매</h2>
             <div class="ticket">
                 <a href="#">
                     <img src="../images/common/header_ticket_icon.png" alt="예매한 티켓 보러가기 아이콘">
                 </a>
             </div>
         </header>
-        <div id="loginBox">
-            <h1>
-                <img src="../images/tnav/logo.png" alt="G.I.F 로고">
-            </h1>
-            <form name="member_form" method="post" action="log_in.php">
-                <ul class="inputBox">
-                    <li>
-                        <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요." class="box">
-                        <label for="id" class="away">아이디 입력</label>
-                    </li>
-                    <li>
-                        <input type="password" name="pass" id="pw" placeholder="비밀번호를 입력해주세요." class="box">
-                        <label for="pw" class="away">비밀번호 입력</label>
-                    </li>
-                    <li>
-                        <button type="submit">로그인</button>
-                    </li>
-                </ul>
-                <ul class="last">
-                    <li class="chkBox">
-                        <input type="checkbox" name="chk" id="chk" checked>
-                        <label for="chk">아이디 저장</label>
-                    </li>
-                    <li class="search underline"><a href="#">아이디/비밀번호 찾기</a></li>
-                    <li class="underline"><a href="join.html">회원가입</a></li>
-                </ul>
-            </form>
+        <div id="subTabBox">
+            <ul>
+                <li><a href="ticketing.php">예매하기</a></li>
+                <li class="active"><a href="schedule.php">상영시간표</a></li>
+            </ul>
+        </div>
+        <div id="scheduleBox">
+            <h3>상영관별 영화 시간표</h3>
+            <ul>
+                <li>
+                    <h4>1관</h4>
+                    <ul class="time">
+                        <li class="type">2D</li>
+                        <li>10:50</li>
+                        <li>12:35</li>
+                        <li>13:20</li>
+                        <li>20:40</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>2관</h4>
+                    <ul class="time">
+                        <li class="type">2D</li>
+                        <li>09:45</li>
+                        <li>14:10</li>
+                        <li>16:20</li>
+                        <li>18:30</li>
+                        <li>21:25</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>3관</h4>
+                    <ul class="time">
+                        <li class="type">3D</li>
+                        <li>15:50</li>
+                        <li>19:15</li>
+                        <li>22:20</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>4관</h4>
+                    <ul class="time">
+                        <li class="type">2D</li>
+                        <li>09:20</li>
+                        <li>12:55</li>
+                        <li>18:40</li>
+                        <li>21:10</li>
+                        <li>22:15</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>5관</h4>
+                    <ul class="time">
+                        <li class="type">4D</li>
+                        <li>14:50</li>
+                        <li>15:35</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <footer>
             <div class="fNav">

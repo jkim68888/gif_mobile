@@ -1,3 +1,4 @@
+<? include "../lib/session.php" ?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -18,44 +19,30 @@
     <body>
         <div class="panel">
             <div class="pTop">
-                <ul>
-                    <li class="close">
-                        <a href="#close_panel">
-                            <img src="../images/common/panel_close_icon.png" alt="패널 닫기 버튼">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../tnav/login.html"><span>로그인</span> 후 이용하세요!</a>
-                    </li>
-                    <li class="home">
-                        <a href="../index.html">
-                            <img src="../images/common/panel_home_icon.png" alt="홈으로 아이콘">
-                        </a>
-                    </li>
-                </ul>
+                <? include "../lib/top_nav.php"; ?>
             </div>
             <div class="topNav">
                 <ul>
-                    <li><a href="../tnav/join.html">회원가입</a></li>
-                    <li><a href="../tnav/nonMember.html">비회원 예매확인</a></li>
+                    <li><a href="../tnav/join.php">회원가입</a></li>
+                    <li><a href="../tnav/nonMember.php">비회원 예매확인</a></li>
                 </ul>
             </div>
             <div class="gnb01">
                 <ul class="first">
                     <li>
-                        <a href="../movie/current.html">
+                        <a href="../movie/current.php">
                             <img src="../images/common/panel_movie_icon.png" alt="영화 아이콘">
                             <p>영화</p>
                         </a>
                     </li>
                     <li class="ticket">
-                        <a href="../ticket/ticketing.html">
+                        <a href="../ticket/ticketing.php">
                             <img src="../images/common/panel_ticketing_icon.png" alt="예매 아이콘">
                             <p>예매</p>
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="../tnav/myPage.html">
+                        <a href="../tnav/myPage.php">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>
@@ -63,19 +50,19 @@
                 </ul>
                 <ul class="last">
                     <li>
-                        <a href="../introduce/about.html">
+                        <a href="../introduce/about.php">
                             <img src="../images/common/panel_independent_icon.png" alt="독립영화 아이콘">
                             <p>독립영화</p>
                         </a>
                     </li>
                     <li class="map">
-                        <a href="../introduce/map.html">
+                        <a href="../introduce/map.php">
                             <img src="../images/common/panel_map_icon.png" alt="오시는길 아이콘">
                             <p>오시는길</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../customer/faq.html">
+                        <a href="../customer/faq.php">
                             <img src="../images/common/panel_customer_icon.png" alt="고객센터 아이콘">
                             <p>고객센터</p>
                         </a>
@@ -85,19 +72,19 @@
             <div class="gnb02">
                 <ul>
                     <li>
-                        <a href="../community/notice.html" class="mainNav">커뮤니티</a>
+                        <a href="../community/notice.php" class="mainNav">커뮤니티</a>
                         <ul class="subNav">
-                            <li><a href="../community/notice.html">공지사항</a></li>
-                            <li><a href="../community/event.html">이벤트</a></li>
-                            <li><a href="../community/news.html">언론</a></li>
+                            <li><a href="../community/notice.php">공지사항</a></li>
+                            <li><a href="../community/event.php">이벤트</a></li>
+                            <li><a href="../community/news.php">언론</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="introduce.html" class="mainNav">광주영화영상인연대</a>
+                        <a href="introduce.php" class="mainNav">광주영화영상인연대</a>
                         <ul class="subNav">
-                            <li><a href="introduce.html">단체소개</a></li>
-                            <li><a href="familysite.html">유관단체</a></li>
-                            <li><a href="identity.html">CI</a></li>
+                            <li><a href="introduce.php">단체소개</a></li>
+                            <li><a href="familysite.php">유관단체</a></li>
+                            <li><a href="identity.php">CI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -138,9 +125,9 @@
         </header>
         <div id="subTabBox">
             <ul>
-                <li><a href="introduce.html">단체소개</a></li>
-				<li class="active"><a href="familysite.html">유관단체</a></li>
-				<li><a href="identity.html">CI</a></li>
+                <li><a href="introduce.php">단체소개</a></li>
+				<li class="active"><a href="familysite.php">유관단체</a></li>
+				<li><a href="identity.php">CI</a></li>
             </ul>
         </div>
         <div id="familyBox">

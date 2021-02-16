@@ -1,3 +1,4 @@
+<? include "../lib/session.php" ?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -18,44 +19,30 @@
     <body>
         <div class="panel">
             <div class="pTop">
-                <ul>
-                    <li class="close">
-                        <a href="#close_panel">
-                            <img src="../images/common/panel_close_icon.png" alt="패널 닫기 버튼">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../tnav/login.html"><span>로그인</span> 후 이용하세요!</a>
-                    </li>
-                    <li class="home">
-                        <a href="../index.html">
-                            <img src="../images/common/panel_home_icon.png" alt="홈으로 아이콘">
-                        </a>
-                    </li>
-                </ul>
+                <? include "../lib/top_nav.php"; ?>
             </div>
             <div class="topNav">
                 <ul>
-                    <li><a href="../tnav/join.html">회원가입</a></li>
-                    <li><a href="../tnav/nonMember.html">비회원 예매확인</a></li>
+                    <li><a href="../tnav/join.php">회원가입</a></li>
+                    <li><a href="../tnav/nonMember.php">비회원 예매확인</a></li>
                 </ul>
             </div>
             <div class="gnb01">
                 <ul class="first">
                     <li>
-                        <a href="../movie/current.html">
+                        <a href="../movie/current.php">
                             <img src="../images/common/panel_movie_icon.png" alt="영화 아이콘">
                             <p>영화</p>
                         </a>
                     </li>
                     <li class="ticket">
-                        <a href="../ticket/ticketing.html">
+                        <a href="../ticket/ticketing.php">
                             <img src="../images/common/panel_ticketing_icon.png" alt="예매 아이콘">
                             <p>예매</p>
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="../tnav/myPage.html">
+                        <a href="../tnav/myPage.php">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>
@@ -63,19 +50,19 @@
                 </ul>
                 <ul class="last">
                     <li>
-                        <a href="../introduce/about.html">
+                        <a href="../introduce/about.php">
                             <img src="../images/common/panel_independent_icon.png" alt="독립영화 아이콘">
                             <p>독립영화</p>
                         </a>
                     </li>
                     <li class="map">
-                        <a href="../introduce/map.html">
+                        <a href="../introduce/map.php">
                             <img src="../images/common/panel_map_icon.png" alt="오시는길 아이콘">
                             <p>오시는길</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../customer/faq.html">
+                        <a href="../customer/faq.php">
                             <img src="../images/common/panel_customer_icon.png" alt="고객센터 아이콘">
                             <p>고객센터</p>
                         </a>
@@ -85,19 +72,19 @@
             <div class="gnb02">
                 <ul>
                     <li>
-                        <a href="../community/notice.html" class="mainNav">커뮤니티</a>
+                        <a href="../community/notice.php" class="mainNav">커뮤니티</a>
                         <ul class="subNav">
-                            <li><a href="../community/notice.html">공지사항</a></li>
-                            <li><a href="../community/event.html">이벤트</a></li>
-                            <li><a href="../community/news.html">언론</a></li>
+                            <li><a href="../community/notice.php">공지사항</a></li>
+                            <li><a href="../community/event.php">이벤트</a></li>
+                            <li><a href="../community/news.php">언론</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="introduce.html" class="mainNav">광주영화영상인연대</a>
+                        <a href="introduce.php" class="mainNav">광주영화영상인연대</a>
                         <ul class="subNav">
-                            <li><a href="introduce.html">단체소개</a></li>
-                            <li><a href="familysite.html">유관단체</a></li>
-                            <li><a href="identity.html">CI</a></li>
+                            <li><a href="introduce.php">단체소개</a></li>
+                            <li><a href="familysite.php">유관단체</a></li>
+                            <li><a href="identity.php">CI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -138,19 +125,74 @@
         </header>
         <div id="subTabBox">
             <ul>
-                <li><a href="introduce.html">단체소개</a></li>
-				<li><a href="familysite.html">유관단체</a></li>
-				<li class="active"><a href="identity.html">CI</a></li>
+                <li class="active"><a href="introduce.php">단체소개</a></li>
+				<li><a href="familysite.php">유관단체</a></li>
+				<li><a href="identity.php">CI</a></li>
             </ul>
         </div>
-        <div id="identityBox">
-            <img src="../images/org/logo.JPG" class="logoImg" alt="G.I.F 로고">
-            <h3>영문폰트</h3>
-            <img src="../images/org/font.JPG" class="fontName" alt="영문 폰트 네임">
-            <h3>CONCEPT</h3>
-            <p>G.I.F 중 G의 심볼마크를 활용하여 영화 필름을 유추할 수 있도록 형상화한 디자인</p>
-            <h3>COLOR</h3>
-            <p>#24125f</p>
+        <div id="introBox">
+            <h3>설립년도</h3>
+            <p>2017년 4월</p>
+            <h3>설립목적</h3>
+            <p class="first">
+                (사)광주영화영상인연대는 시민 모두가 영화 · 영상 문화 활동에 참여하고<br> 
+                향유할 수 있는 환경을 조성하려 힘쓰고 있다.
+            </p>
+            <p class="last">
+                광주여성영화제, 광주독립영화협회, 광주극장, 영화영상 사회적 기업 ㈜필름에이지와 ㈜잇다,<br>
+                영화공동체 길동무 그리고 영화연구자 및 광주광역시 시민들이 모여서 창립하였다.
+            </p>
+            <h3>주요활동내역</h3>
+            <table>
+                <tr>
+                    <th>160628</th>
+                    <td>광주국제영화제 문제 해결과 지역영화 활성화 기자 회견 및 퍼포먼스</td>
+                </tr>
+                <tr>
+                    <th>160706</th>
+                    <td>광주국제영화제 문제 해결과 지역영화 활성화를 위한 릴레이 1인 시위</td>
+                </tr>
+                <tr>
+                    <th>170406</th>
+                    <td>광주영화영상인연대 창립 총회</td>
+                </tr>
+                <tr>
+                    <th>171115</th>
+                    <td>독립영화전용관 설립지원 사업 선정(영화진흥위원회)</td>
+                </tr>
+                <tr>
+                    <th>180411</th>
+                    <td>광주독립영화관(G.I.F) 개관</td>
+                </tr>
+                <tr>
+                    <th>181018</th>
+                    <td>광주영화 도약을 위한 컨퍼런스 개최</td>
+                </tr>
+                <tr>
+                    <th>180830</th>
+                    <td>‘광주씨네마클래스’, ‘실험 영화’, ‘비평가 양성과정’ 등 영화 교육 실시</td>
+                </tr>
+                <tr>
+                    <th>190120</th>
+                    <td>독립영화전용관 운영지원사업 선정 (영화진흥위원회)</td>
+                </tr>
+                <tr>
+                    <th>190710</th>
+                    <td>광주영상영화진흥조례 제정 (광주광역시)</td>
+                </tr>
+                <tr>
+                    <th>190920</th>
+                    <td>광주영화비평지 창간 및 발행 (창간준비호, 창간호)</td>
+                </tr>
+                <tr>
+                    <th>200422</th>
+                    <td>독립·예술영화 전용상영관 승인 (문화체육관광부)</td>
+                </tr>
+                <tr>
+                    <th>200518</th>
+                    <td>광주영화학교 개설(영화 창 · 제작 전체 과정)</td>
+                </tr>
+            </table>
         </div>
         <footer>
             <div class="fNav">

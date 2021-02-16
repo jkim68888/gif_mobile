@@ -1,61 +1,49 @@
+<? include "../lib/session.php" ?>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
         <meta name="robots" content="noindex,nofollow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>상영시간표 - G.I.F</title>
+        <title>분실물신고 - G.I.F</title>
         <link rel="shortcut-icon" href="../images/common/favicon_16x16.png">
         <link rel="icon" sizes="192x192" href="../images/common/favicon_android_192x192.png">
         <link rel="apple-touch-icon" sizes="180x180" href="../images/common/favicon_ios_180x180.png">
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/sub.css">
-        <link rel="stylesheet" href="../css/ticket.css">
+        <link rel="stylesheet" href="../css/customer.css">
         <script src="../js/jquery-1.12.0.min.js"></script>
         <script src="../js/jquery.easing.1.3.js"></script>
         <script src="../js/common.js"></script>
+        <script src="../js/customer.js"></script>
     </head>
     <body>
         <div class="panel">
             <div class="pTop">
-                <ul>
-                    <li class="close">
-                        <a href="#close_panel">
-                            <img src="../images/common/panel_close_icon.png" alt="패널 닫기 버튼">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../tnav/login.html"><span>로그인</span> 후 이용하세요!</a>
-                    </li>
-                    <li class="home">
-                        <a href="../index.html">
-                            <img src="../images/common/panel_home_icon.png" alt="홈으로 아이콘">
-                        </a>
-                    </li>
-                </ul>
+                <? include "../lib/top_nav.php"; ?>
             </div>
             <div class="topNav">
                 <ul>
-                    <li><a href="../tnav/join.html">회원가입</a></li>
-                    <li><a href="../tnav/nonMember.html">비회원 예매확인</a></li>
+                    <li><a href="../tnav/join.php">회원가입</a></li>
+                    <li><a href="../tnav/nonMember.php">비회원 예매확인</a></li>
                 </ul>
             </div>
             <div class="gnb01">
                 <ul class="first">
                     <li>
-                        <a href="../movie/current.html">
+                        <a href="../movie/current.php">
                             <img src="../images/common/panel_movie_icon.png" alt="영화 아이콘">
                             <p>영화</p>
                         </a>
                     </li>
                     <li class="ticket">
-                        <a href="ticketing.html">
+                        <a href="../ticket/ticketing.php">
                             <img src="../images/common/panel_ticketing_icon.png" alt="예매 아이콘">
                             <p>예매</p>
                         </a>
                     </li>
                     <li class="mypage">
-                        <a href="../tnav/myPage.html">
+                        <a href="../tnav/myPage.php">
                             <img src="../images/common/panel_mypage_icon.png" alt="마이페이지 아이콘">
                             <p>마이페이지</p>
                         </a>
@@ -63,19 +51,19 @@
                 </ul>
                 <ul class="last">
                     <li>
-                        <a href="../introduce/about.html">
+                        <a href="../introduce/about.php">
                             <img src="../images/common/panel_independent_icon.png" alt="독립영화 아이콘">
                             <p>독립영화</p>
                         </a>
                     </li>
                     <li class="map">
-                        <a href="../introduce/map.html">
+                        <a href="../introduce/map.php">
                             <img src="../images/common/panel_map_icon.png" alt="오시는길 아이콘">
                             <p>오시는길</p>
                         </a>
                     </li>
                     <li>
-                        <a href="../customer/faq.html">
+                        <a href="faq.php">
                             <img src="../images/common/panel_customer_icon.png" alt="고객센터 아이콘">
                             <p>고객센터</p>
                         </a>
@@ -85,19 +73,19 @@
             <div class="gnb02">
                 <ul>
                     <li>
-                        <a href="../community/notice.html" class="mainNav">커뮤니티</a>
+                        <a href="../community/notice.php" class="mainNav">커뮤니티</a>
                         <ul class="subNav">
-                            <li><a href="../community/notice.html">공지사항</a></li>
-                            <li><a href="../community/event.html">이벤트</a></li>
-                            <li><a href="../community/news.html">언론</a></li>
+                            <li><a href="../community/notice.php">공지사항</a></li>
+                            <li><a href="../community/event.php">이벤트</a></li>
+                            <li><a href="../community/news.php">언론</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="../org/introduce.html" class="mainNav">광주영화영상인연대</a>
+                        <a href="../org/introduce.php" class="mainNav">광주영화영상인연대</a>
                         <ul class="subNav">
-                            <li><a href="../org/introduce.html">단체소개</a></li>
-                            <li><a href="../org/familysite.html">유관단체</a></li>
-                            <li><a href="../org/identity.html">CI</a></li>
+                            <li><a href="../org/introduce.php">단체소개</a></li>
+                            <li><a href="../org/familysite.php">유관단체</a></li>
+                            <li><a href="../org/identity.php">CI</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -129,7 +117,7 @@
                     <img src="../images/common/header_menu_icon.png" alt="패널 열기 버튼">
                 </a>
             </div>
-            <h2>예매</h2>
+            <h2>고객센터</h2>
             <div class="ticket">
                 <a href="#">
                     <img src="../images/common/header_ticket_icon.png" alt="예매한 티켓 보러가기 아이콘">
@@ -138,63 +126,73 @@
         </header>
         <div id="subTabBox">
             <ul>
-                <li><a href="ticketing.html">예매하기</a></li>
-                <li class="active"><a href="schedule.html">상영시간표</a></li>
+                <li><a href="faq.php">Q&amp;A</a></li>
+                <li><a href="person.php">1:1문의</a></li>
+                <li class="active"><a href="lost.php">분실물신고</a></li>
             </ul>
         </div>
-        <div id="scheduleBox">
-            <h3>상영관별 영화 시간표</h3>
-            <ul>
-                <li>
-                    <h4>1관</h4>
-                    <ul class="time">
-                        <li class="type">2D</li>
-                        <li>10:50</li>
-                        <li>12:35</li>
-                        <li>13:20</li>
-                        <li>20:40</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>2관</h4>
-                    <ul class="time">
-                        <li class="type">2D</li>
-                        <li>09:45</li>
-                        <li>14:10</li>
-                        <li>16:20</li>
-                        <li>18:30</li>
-                        <li>21:25</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>3관</h4>
-                    <ul class="time">
-                        <li class="type">3D</li>
-                        <li>15:50</li>
-                        <li>19:15</li>
-                        <li>22:20</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>4관</h4>
-                    <ul class="time">
-                        <li class="type">2D</li>
-                        <li>09:20</li>
-                        <li>12:55</li>
-                        <li>18:40</li>
-                        <li>21:10</li>
-                        <li>22:15</li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>5관</h4>
-                    <ul class="time">
-                        <li class="type">4D</li>
-                        <li>14:50</li>
-                        <li>15:35</li>
-                    </ul>
-                </li>
-            </ul>
+        <div id="lostBox">
+            <form action="#">
+                <p class="subscript">
+                    <span class="star">*</span>
+                    필수입력항목
+                </p>
+                <table>
+                    <caption>분실물 신고란</caption>
+                    <tr>
+                        <th>
+                            <span class="star">*</span>
+                            <label for="name" class="title">신고자</label>
+                        </th>
+                        <td>
+                            <input type="text" id="name" placeholder="이름을 입력해주세요." class="nameBox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="star">*</span>
+                            <label for="phone01" class="title">휴대폰</label>
+                        </th>
+                        <td>
+                            <select id="phone01" class="phoneBox">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>
+                            -
+                            <input type="text" id="phone02" maxlength="4" class="phoneBox">
+                            <label for="phone02" class="away">휴대폰 가운데 4자리입력</label>
+                            -
+                            <input type="text" id="phone03" maxlength="4" class="phoneBox">
+                            <label for="phone03" class="away">휴대폰 마지막 4자리입력</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <span class="star">*</span>
+                            <label for="item" class="title">분실물</label>
+                        </th>
+                        <td class="birth">
+                            <input type="text" id="item" placeholder="분실물을 입력해주세요." class="titleBox">
+                        </td>
+                    </tr>
+                    <tr class="last">
+                        <th>
+                            <span class="star">*</span>
+                            <label for="descript" class="title">설명란</label>
+                        </th>
+                        <td>
+                            <textarea name="faq" id="descript" cols="30" rows="10" placeholder="구체적으로 설명해주세요." class="cBox"></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div class="btnWrap">
+                    <button type="submit">신고하기</button>
+                </div>
+            </form>
         </div>
         <footer>
             <div class="fNav">
