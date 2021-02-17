@@ -158,8 +158,8 @@
         <div id="subTabBox">
             <ul>
                 <li><a href="notice.php">공지사항</a></li>
-                <li class="active"><a href="event.php">이벤트</a></li>
-                <li><a href="news.php">언론</a></li>
+                <li><a href="event.php">이벤트</a></li>
+                <li class="active"><a href="news.php">언론</a></li>
             </ul>
         </div>
         <div id="subBox">
