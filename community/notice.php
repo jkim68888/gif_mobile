@@ -232,9 +232,7 @@
                         <tr>
                             <th>번호</th>
                             <th>제목</th>
-                            <th>글쓴이</th>
                             <th>날짜</th>
-                            <th class="last">조회</th>
                         </tr>
                         <?
                             if($total_record == 0){
@@ -267,9 +265,7 @@
                             <td><?= $number ?></td>
                             <!--내용을 클릭시 해당 글을 보여주는 view.php로 이동-->
                             <td class="title"><a href="notice_view.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>"><?= $item_subject ?></a></td>
-                            <td><?= $item_name ?></td>
                             <td><?= $item_date ?></td>
-                            <td><?= $item_hit ?></td>
                         </tr>
                         <!--번호를 숫자를 감소-->
                         <?

@@ -207,8 +207,6 @@
                         <td><?= $item_subject ?></td>
                         <th>조회수</th>
                         <td class="last"><?= $item_hit ?> </td>
-                    </tr>
-                    <tr>
                         <th>작성자</th>
                         <td><?= $item_name ?> </td>
                         <th>작성일</th>
