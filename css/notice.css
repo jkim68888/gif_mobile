@@ -20,7 +20,7 @@
 #subContents .noticeTable table{ width: 100%; margin: 50px 0 2rem; }
 #subContents .noticeTable caption{ position: absolute; left: -999em; }
 #subContents .noticeTable th{ background-color: #ededed; border-right: none; }
-#subContents .noticeTable td{ border-right: none; padding: 15px; }
+#subContents .noticeTable td{ border-right: none; padding: 0.5rem; }
 #subContents .noticeTable td a{ font-size: 1rem; }
 #subContents .noticeTable td a:hover{ text-decoration: underline; color: #24125f; }
 
@@ -50,6 +50,8 @@
 
 
 /* 표스타일 */
+#subContents tbody{ width: 100%; }
+#subContents tr{ width: 100%; }
 #subContents th{
     padding: 0.5rem; box-sizing: border-box;
     border-top: 2px solid #24125f; border-bottom: 1px solid #ccc;
@@ -68,6 +70,11 @@
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
+#subContents table th:nth-child(1), #subContents table td:nth-child(1) { width: 10%; text-align: center; }
+#subContents table th:nth-child(2), #subContents table td:nth-child(2) { width: 50%; text-align: left; }
+#subContents table th:nth-child(3), #subContents table td:nth-child(3) { width: 15%; text-align: center; }
+#subContents table th:nth-child(4), #subContents table td:nth-child(4) { width: 15%; text-align: center; }
+#subContents table th:nth-child(5), #subContents table td:nth-child(5) { width: 10%; text-align: center; }
 #subContents table .first{ font-weight: 700; color: #333; }
 #subContents table .last{ border-right: none; }
 

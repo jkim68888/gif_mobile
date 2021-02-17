@@ -14,7 +14,7 @@
 
 *{ padding: 0; margin: 0; font-family: 'Noto Sans KR', '맑은고딕', 'Malgun Gothic', sans-serif; }
 li{ list-style: none; }
-a{ text-decoration: none; }
+a{ text-decoration: none; color: #333; }
 img{ display: block; border: none; }
 fieldset{ border: none; }
 legend, label.away{ position: absolute; left: -999em; }
