@@ -226,7 +226,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tnav/confirm.php">
+                    <a href="tnav/nonMember.php">
                         <img src="images/main/guide_icon03.png" alt="예매확인 아이콘">
                         <p>예매확인</p>
                     </a>
