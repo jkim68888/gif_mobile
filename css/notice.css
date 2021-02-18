@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* common */
-#subBox{ height: 80rem; padding: 2rem 15px 6rem; box-sizing: border-box; }
+#subBox{ height: auto; padding: 2rem 15px 6rem; box-sizing: border-box; }
 
 /* 공지사항 목록 */
 #subContents .noticeTable{ position: relative; width: 100%; }
@@ -30,7 +30,7 @@
 #subContents .noticeTable .pageNum > b{ color: #333; }
 
 #subContents .noticeTable .btnWrap{ position: absolute; top: 0; right: 0; width: 40%; }
-#subContents .noticeTable .btnWrap a{ display: inline-block; width: 5rem; height: 3rem; border: 1px solid #24125f; box-sizing: border-box; text-align: center; line-height: 38px; color: #24125f; font-weight: 500; }
+#subContents .noticeTable .btnWrap a{ display: inline-block; width: 3.5rem; height: 2.5rem; border: 1px solid #24125f; box-sizing: border-box; text-align: center; line-height: 2.5rem; color: #24125f; font-weight: 500; }
 #subContents .noticeTable .btnWrap a.writeBtn{ background-color: #24125f; color: #fff; }
 
 /* 타이틀 텍스트 */
@@ -43,7 +43,7 @@
 
 
 /* 표스타일 */
-#subContents tr{ width: 100%; display: flex; justify-content: space-between; line-height: 2rem; box-sizing: border-box; text-align: center; }
+#subContents tr{ width: 100%; display: flex; line-height: 2rem; box-sizing: border-box; text-align: center; }
 #subContents th{
     padding: 0.5rem; box-sizing: border-box;
     border-top: 2px solid #24125f; border-bottom: 1px solid #ccc;
@@ -56,6 +56,8 @@
     border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;
     color: #666; font-size: 0.75rem; text-align: center;
 }
+
+
 #subContents .title{
     width: 5rem;
     text-align: left;
@@ -63,9 +65,10 @@
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
-#subContents table th:nth-child(1), #subContents table td:nth-child(1){ width: 20%; text-align: left; }
-#subContents table th:nth-child(2), #subContents table td:nth-child(2){ width: 50%; text-align: left; }
-#subContents table th:nth-child(3), #subContents table td:nth-child(3){ width: 30%; text-align: left; }
+#subContents table th:nth-child(1), #subContents table td:nth-child(1){ text-align: center; }
+#subContents table th:nth-child(2), #subContents table td:nth-child(2){ flex: 2; text-align: center; }
+#subContents table td:nth-child(2){ text-align: left; }
+#subContents table th:nth-child(3), #subContents table td:nth-child(3){ text-align: center; }
 #subContents table .first{ font-weight: 700; color: #333; }
 #subContents table .last{ border-right: none; }
 
@@ -88,10 +91,15 @@
 /* 공지사항 글보기 */
 .noticeView{ width: 100%; margin-bottom: 2rem; box-sizing: border-box; }
 .noticeView caption{ position: absolute; left: -999em; }
-#subContents .noticeView th{ width: 15%; border-top: none;  }
-#subContents .noticeView td{ border-top: none; text-align: left; }
-#subContents .noticeView .top th, #subContents .noticeView .top td{ border-top: 2px solid #24125f; }
+#subContents .noticeView tr{ width: 100%; border-bottom: 1px solid #ebebeb; }
+#subContents .noticeView th{ width: 30%; border-top: none; border-right: none; }
+#subContents .noticeView td{ width: 70%; border-top: none; border-right: none; text-align: left; }
+#subContents .noticeView .top th{ width: 100%; border-top: 1px solid #24125f; }
+#subContents .noticeView .subject td{ width: 100%; border-bottom: 1px solid #ebebeb; }
 .noticeView + .btnWrap{ width: 100%; text-align: center; }
-.noticeView + .btnWrap > *{ display: inline-block; width: 7rem; height: 3rem; border: 1px solid #24125f; box-sizing: border-box; text-align: center; line-height: 3rem; color: #24125f; font-weight: 500; }
+.noticeView + .btnWrap > *{ display: inline-block; width: 4rem; height: 2.5rem; border: 1px solid #24125f; box-sizing: border-box; text-align: center; line-height: 2.5rem; color: #24125f; font-weight: 500; }
 .noticeView + .btnWrap > .modifyBtn{ background-color: #24125f; color: #fff; }
 .noticeView + .btnWrap > .deleteBtn{ background-color: #d80707; color: #fff; border: 1px solid #d80707; }
+
+
+

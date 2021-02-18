@@ -49,8 +49,8 @@
 			$image_height[$i] = $imageinfo[1];
 			$image_type[$i]  = $imageinfo[2];
 
-			if ($image_width[$i] > 785){
-				$image_width[$i] = 785;
+			if ($image_width[$i] > 150){
+				$image_width[$i] = 150;
             }
 		}else{
 			$image_width[$i] = "";
@@ -204,11 +204,17 @@
                     <caption>게시글 확인</caption>
                     <tr class="top">
                         <th>제목</th>
+                    </tr>
+                    <tr class="subject">
                         <td><?= $item_subject ?></td>
+                    </tr>
+                    <tr>  
                         <th>조회수</th>
                         <td class="last"><?= $item_hit ?> </td>
                         <th>작성자</th>
                         <td><?= $item_name ?> </td>
+                    </tr>
+                    <tr>
                         <th>작성일</th>
                         <td class="last"><?= $item_date ?> </td>
                     </tr>
