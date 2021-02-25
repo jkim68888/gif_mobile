@@ -227,7 +227,7 @@
                         <button type="submit" name="search_btn" id="searchBtn">검색</button>
                     </form>
                     <table>
-                        <!--행제목-->
+                        <caption class="caption_away">공지사항 게시판</caption>
                         <tr>
                             <th>번호</th>
                             <th>제목</th>

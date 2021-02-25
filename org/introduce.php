@@ -144,6 +144,7 @@
             </p>
             <h3>주요활동내역</h3>
             <table>
+                <caption class="caption_away">주요활동내역표</caption>
                 <tr>
                     <th>160628</th>
                     <td>광주국제영화제 문제 해결과 지역영화 활성화 기자 회견 및 퍼포먼스</td>
